@@ -4,12 +4,12 @@ import { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
 const NAV_LINKS = [
-  { label: 'About', href: '#about', num: '01' },
-  { label: 'Skills', href: '#skills', num: '02' },
-  { label: 'Projects', href: '#projects', num: '03' },
-  { label: 'Experience', href: '#experience', num: '04' },
-  { label: 'Services', href: '#services', num: '05' },
-  { label: 'Contact', href: '#contact', num: '06' },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Services', href: '#services' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 const RESUME_URL = 'https://drive.google.com/file/d/1RAbM_FLWQ8JSUUkckZqrc6VluMrAFCDT/view?usp=drive_link';
@@ -349,14 +349,14 @@ export default function FloatingNav() {
             <span className="nav-status-text">Available</span>
           </div>
 
-          {NAV_LINKS.map(link => (
+          {NAV_LINKS.map((link, i) => (
             <a
               key={link.href}
               href={link.href}
               onClick={e => scrollTo(e, link.href)}
               className={`nav-item ${active === link.href.slice(1) ? 'active' : ''}`}
             >
-              <span className="nav-item-num">{link.num}</span>
+              <span className="nav-item-num">{String(i + 1).padStart(2, '0')}</span>
               <span className="nav-item-label">{link.label}</span>
             </a>
           ))}
@@ -390,7 +390,7 @@ export default function FloatingNav() {
               className="mob-link"
               style={{ animationDelay: `${i * 0.05}s`, animation: 'fade-in-up 0.35s ease both' }}
             >
-              <span className="mob-link-num">{link.num}</span>
+              <span className="mob-link-num">{String(i + 1).padStart(2, '0')}</span>
               <span className="mob-link-label">{link.label}</span>
             </a>
           ))}
