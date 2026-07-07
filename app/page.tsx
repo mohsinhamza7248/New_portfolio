@@ -6,6 +6,7 @@ import { useState } from 'react';
 import FloatingNav    from '@/components/ui/FloatingNav';
 import CustomCursor   from '@/components/ui/CustomCursor';
 import ScrollProgress from '@/components/ui/ScrollProgress';
+import SoundToggle    from '@/components/ui/SoundToggle';
 
 // Sections
 import LoadingScreen from '@/components/sections/LoadingScreen';
@@ -35,6 +36,7 @@ export default function Page() {
       {/* UI overlays */}
       <CustomCursor />
       <ScrollProgress />
+      <SoundToggle />
 
       {/* Navigation */}
       <FloatingNav />

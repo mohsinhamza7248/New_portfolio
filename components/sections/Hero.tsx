@@ -507,6 +507,7 @@ export default function Hero() {
                 @media (max-width: 900px) {
                   #hero > div > div {
                     grid-template-columns: 1fr !important;
+                    padding: 0 20px !important;
                   }
                   .laptop-wrap { display: none !important; }
                 }

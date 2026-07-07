@@ -106,18 +106,18 @@ export default function SoundToggle() {
         <button
           onClick={toggleSound}
           style={{
-            background: isPlaying ? 'rgba(14, 165, 233, 0.12)' : 'var(--glass-bg)',
-            border: `1px solid ${isPlaying ? 'var(--accent-blue)' : 'var(--glass-border)'}`,
+            background: isPlaying ? 'rgba(0, 245, 255, 0.12)' : 'var(--c-card)',
+            border: `1px solid ${isPlaying ? 'var(--c-cyan)' : 'var(--c-border)'}`,
             borderRadius: '50px',
             padding: '10px 18px',
             fontSize: '11px',
             fontFamily: 'JetBrains Mono, monospace',
-            color: isPlaying ? 'var(--accent-blue-bright)' : 'var(--text-secondary)',
+            color: isPlaying ? 'var(--c-cyan)' : 'var(--c-secondary)',
             display: 'flex',
             alignItems: 'center',
             gap: '8px',
             cursor: 'none',
-            boxShadow: isPlaying ? '0 0 15px rgba(14, 165, 233, 0.2)' : 'none',
+            boxShadow: isPlaying ? '0 0 15px rgba(0, 245, 255, 0.2)' : 'none',
             transition: 'all 0.3s ease',
           }}
         >

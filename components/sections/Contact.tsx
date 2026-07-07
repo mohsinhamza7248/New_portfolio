@@ -246,6 +246,12 @@ export default function Contact() {
         @media (max-width: 760px) {
           #contact .container > div:last-child {
             grid-template-columns: 1fr !important;
+            gap: 32px !important;
+          }
+        }
+        @media (max-width: 480px) {
+          #contact .glass-card {
+            padding: 32px 20px !important;
           }
         }
       `}</style>

@@ -51,7 +51,7 @@ export default function Skills() {
 
         <div className="skills-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))',
           gap: 20,
         }}>
           {Object.entries(SKILLS).map(([category, { color, skills }]) => (

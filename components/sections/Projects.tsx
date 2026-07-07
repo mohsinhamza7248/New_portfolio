@@ -97,7 +97,7 @@ function CaseStudyModal({ project, onClose }: { project: Project; onClose: () =>
           </div>
 
           {/* Challenge / Solution grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 28 }}>
+          <div className="cs-grid">
             {[
               { icon: '⚡', label: 'Challenge', text: project.challenges, accent: '#F59E0B' },
               { icon: '✓',  label: 'Solution',  text: project.solution,   accent: '#00FFA3' },
@@ -763,6 +763,25 @@ export default function Projects() {
           transform: rotate(90deg);
         }
         .cs-body { padding: 28px 32px 36px; }
+        .cs-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+          margin-bottom: 28px;
+        }
+        @media (max-width: 600px) {
+          .cs-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .cs-header {
+            padding: 20px 16px !important;
+          }
+          .cs-body {
+            padding: 20px 16px 24px !important;
+          }
+        }
         .cs-section-block { margin-bottom: 28px; }
         .cs-block-label {
           font-family: 'JetBrains Mono', monospace;
