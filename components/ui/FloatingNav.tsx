@@ -349,14 +349,13 @@ export default function FloatingNav() {
             <span className="nav-status-text">Available</span>
           </div>
 
-          {NAV_LINKS.map((link, i) => (
+          {NAV_LINKS.map(link => (
             <a
               key={link.href}
               href={link.href}
               onClick={e => scrollTo(e, link.href)}
               className={`nav-item ${active === link.href.slice(1) ? 'active' : ''}`}
             >
-              <span className="nav-item-num">{String(i + 1).padStart(2, '0')}</span>
               <span className="nav-item-label">{link.label}</span>
             </a>
           ))}
@@ -390,7 +389,6 @@ export default function FloatingNav() {
               className="mob-link"
               style={{ animationDelay: `${i * 0.05}s`, animation: 'fade-in-up 0.35s ease both' }}
             >
-              <span className="mob-link-num">{String(i + 1).padStart(2, '0')}</span>
               <span className="mob-link-label">{link.label}</span>
             </a>
           ))}
