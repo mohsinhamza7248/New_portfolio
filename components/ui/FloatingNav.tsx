@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { label: 'Contact', href: '#contact', num: '06' },
 ];
 
-const RESUME_URL = 'https://drive.google.com/file/d/1-z9P7n43FXcHC8dWjlL3_fe1YbBrTBMT/view?usp=drive_link';
+const RESUME_URL = 'https://drive.google.com/file/d/1RAbM_FLWQ8JSUUkckZqrc6VluMrAFCDT/view?usp=drive_link';
 
 export default function FloatingNav() {
   const [scrolled, setScrolled] = useState(false);

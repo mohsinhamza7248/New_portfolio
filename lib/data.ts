@@ -246,7 +246,7 @@ export const SOCIAL = {
   instagram: 'https://www.instagram.com/mohsin_ansari_20',
   discord: 'https://discord.com/users/mohsin9579',
   email: 'mohsinhamza7248@gmail.com',
-  resume: 'https://drive.google.com/file/d/1-z9P7n43FXcHC8dWjlL3_fe1YbBrTBMT/view?usp=drive_link',
+  resume: 'https://drive.google.com/file/d/1RAbM_FLWQ8JSUUkckZqrc6VluMrAFCDT/view?usp=drive_link',
   whatsapp: 'https://wa.me/917248437226', // TODO: Update with your WhatsApp number (with country code, e.g., 919999999999)
 };
 

@@ -63,7 +63,7 @@ const COMMANDS: Record<string, string[]> = {
   resume: [
     '',
     '  Opening resume PDF...',
-    '  → https://drive.google.com/file/d/1-z9P7n43FXcHC8dWjlL3_fe1YbBrTBMT/',
+    '  → https://drive.google.com/file/d/1RAbM_FLWQ8JSUUkckZqrc6VluMrAFCDT/',
     '',
   ],
   github: [
@@ -120,7 +120,7 @@ export default function Terminal({ onClose }: TerminalProps) {
       response.forEach((line) => newLines.push({ text: line, type: 'output' }));
 
       if (trimmed === 'resume') {
-        setTimeout(() => window.open('https://drive.google.com/file/d/1-z9P7n43FXcHC8dWjlL3_fe1YbBrTBMT/view?usp=drive_link', '_blank'), 500);
+        setTimeout(() => window.open('https://drive.google.com/file/d/1RAbM_FLWQ8JSUUkckZqrc6VluMrAFCDT/view?usp=drive_link', '_blank'), 500);
       }
       if (trimmed === 'github') {
         setTimeout(() => window.open('https://github.com/mohsinhamza7248', '_blank'), 500);
